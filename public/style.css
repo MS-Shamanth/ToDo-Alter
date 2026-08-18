@@ -22,8 +22,8 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333
 #lists li:hover { background:#efefef; }
 #lists li.active { font-weight:600; color:#111; background:#eaeaea; }
 #lists li .cnt { color:#aaa; font-size:12px; }
-.new-list { color:#999; cursor:pointer; font-size:12px; }
-.new-list:hover { color:#333; }
+.new-list { color:#666; cursor:pointer; font-size:13px; padding:6px 4px; }
+.new-list:hover { color:#111; }
 
 .main { flex:1; padding:28px 40px; overflow-y:auto; }
 #empty-msg { color:#bbb; text-align:center; margin-top:100px; font-size:14px; }
@@ -52,11 +52,11 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #fff; color: #333
 .todo-item .title-row { display:flex; align-items:center; gap:8px; }
 .todo-item .title-row input[type="checkbox"] { width:14px; height:14px; cursor:pointer; accent-color:#333; }
 .todo-item .title-text { font-size:14px; color:#333; }
-.todo-item.done .title-text { text-decoration:line-through; color:#bbb; }
-.todo-item .actions { font-size:10px; color:#ccc; margin-left:auto; }
-.todo-item:hover .actions { color:#aaa; }
-.todo-item .actions span { cursor:pointer; margin-left:6px; }
-.todo-item .actions span:hover { color:#333; }
+.todo-item.done .title-text { color:#aaa; }
+.todo-item .actions { font-size:12px; color:#aaa; margin-left:auto; display:flex; gap:10px; }
+.todo-item:hover .actions { color:#666; }
+.todo-item .actions span { cursor:pointer; }
+.todo-item .actions span:hover { color:#111; }
 .todo-item .tags { margin-top:6px; margin-left:22px; }
 .todo-item .tags span { display:inline-block; background:#f0f0f0; color:#666; padding:2px 8px; border-radius:3px; font-size:10px; margin-right:6px; cursor:pointer; }
 .todo-item .tags span:hover { background:#e5e5e5; }
