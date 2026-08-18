@@ -21,40 +21,36 @@
 
 <div id="app-page" style="display:none">
     <div class="sidebar">
-        <div class="top-row">
-            <span class="user-name" id="user-display"></span>
-            <span class="logout" onclick="logout()" title="Logout">&#91;&rarr;</span>
+        <div class="user-row">
+            <span id="user-display"></span>
+            <span class="logout-icon" onclick="logout()" title="Logout">&#8618;</span>
         </div>
         <div class="label">MY LISTS</div>
         <ul id="lists"></ul>
-        <div class="new-list" onclick="createList()">+ &nbsp;New List</div>
+        <div class="new-list" onclick="createList()">+&nbsp; New List</div>
     </div>
-
     <div class="main">
-        <div id="empty">Select or create a list</div>
+        <div id="empty-msg">Select or create a list to get started</div>
         <div id="list-view" style="display:none">
-            <div class="head">
+            <div class="list-header">
                 <h1 id="list-name"></h1>
                 <span class="pencil" onclick="renameList()">&#9998;</span>
-                <span class="mini" onclick="shareList()">share</span>
-                <span class="mini" onclick="deleteList()">delete</span>
-                <button class="new-task" onclick="showForm()">+ &nbsp;New Task</button>
+                <button class="new-task-btn" onclick="showForm()">+ New Task</button>
             </div>
-            <div id="share-box" style="display:none"></div>
-            <div id="form" style="display:none">
-                <input type="text" id="t-title" placeholder="Task name">
-                <input type="text" id="t-tags" placeholder="tags, comma separated">
+            <div id="share-bar" style="display:none"></div>
+            <div id="task-form" style="display:none">
+                <input type="text" id="inp-title" placeholder="Task name...">
+                <input type="text" id="inp-tags" placeholder="Tags (comma separated)">
                 <button onclick="addItem()">Add</button>
-                <button onclick="hideForm()">Cancel</button>
+                <button class="cancel-btn" onclick="hideForm()">Cancel</button>
             </div>
-            <div id="filter-note" style="display:none"></div>
+            <div id="filter-bar" style="display:none"></div>
             <div id="items"></div>
         </div>
     </div>
-
-    <div class="stats">
+    <div class="stats-panel">
         <div class="label">LIST STATISTICS</div>
-        <div id="stats-box"></div>
+        <div id="stats"></div>
     </div>
 </div>
 
