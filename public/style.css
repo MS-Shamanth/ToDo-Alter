@@ -1,0 +1,65 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:#fafafa;color:#333;font-size:13px}
+
+#auth-page{display:flex;justify-content:center;align-items:center;height:100vh}
+.auth-box{width:280px;text-align:center}
+.auth-box h2{margin-bottom:18px;font-weight:600;font-size:20px}
+.auth-box input{width:100%;padding:9px;margin:5px 0;border:1px solid #e0e0e0;border-radius:3px;font-size:13px;background:#fff}
+.auth-box button{padding:8px 18px;margin:6px 4px 0;border:1px solid #333;background:#fff;cursor:pointer;border-radius:3px;font-size:12px}
+.auth-box button:first-of-type{background:#222;color:#fff}
+#auth-error{color:#c00;font-size:11px;height:14px;margin-top:6px}
+
+#app-page{display:flex;height:100vh}
+
+.sidebar{width:215px;background:#fafafa;border-right:1px solid #e8e8e8;padding:22px 20px}
+.top-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
+.user-name{font-weight:600;font-size:13px;color:#222}
+.logout{color:#999;cursor:pointer;font-size:12px}
+.logout:hover{color:#222}
+.label{font-size:9.5px;color:#999;letter-spacing:1.1px;font-weight:600;margin-bottom:14px}
+#lists{list-style:none;margin-bottom:16px}
+#lists li{display:flex;justify-content:space-between;padding:7px 0;cursor:pointer;color:#555;font-size:13px}
+#lists li:hover{color:#000}
+#lists li.on{font-weight:600;color:#111}
+#lists li .n{color:#999;font-size:12px;font-weight:400}
+.new-list{color:#aaa;cursor:pointer;font-size:12px;padding-left:14px}
+.new-list:hover{color:#333}
+
+.main{flex:1;padding:30px 45px;overflow-y:auto}
+#empty{color:#bbb;text-align:center;margin-top:90px}
+.head{display:flex;align-items:center;gap:12px;margin-bottom:38px}
+.head h1{font-size:21px;font-weight:700;color:#1a1a1a}
+.pencil{color:#888;cursor:pointer;font-size:15px}
+.pencil:hover{color:#000}
+.mini{font-size:10px;color:#ccc;cursor:pointer}
+.mini:hover{color:#555}
+.new-task{margin-left:auto;background:#252525;color:#fff;border:none;padding:9px 18px;border-radius:4px;cursor:pointer;font-size:11.5px}
+
+#share-box{margin-bottom:20px;font-size:11px;color:#777}
+#share-box a{color:#444}
+#form{display:flex;gap:8px;margin-bottom:28px}
+#form input{padding:8px;border:1px solid #e0e0e0;border-radius:3px;font-size:12px;background:#fff}
+#form input:first-child{width:190px}
+#form input:nth-child(2){width:170px}
+#form button{padding:7px 14px;border:1px solid #333;background:#fff;border-radius:3px;cursor:pointer;font-size:11px}
+#form button:first-of-type{background:#252525;color:#fff}
+#filter-note{font-size:11px;color:#888;margin-bottom:18px}
+#filter-note a{color:#333;cursor:pointer;text-decoration:underline}
+
+.todo{margin-bottom:48px}
+.todo .t{font-size:14.5px;color:#333;cursor:pointer;font-weight:400}
+.todo.done .t{text-decoration:line-through;color:#bbb}
+.todo .tags{margin-top:9px}
+.todo .tags span{display:inline-block;background:#efefef;color:#666;padding:3px 9px;border-radius:3px;font-size:10.5px;margin-right:8px;cursor:pointer}
+.todo .tags span:hover{background:#e0e0e0}
+.todo .acts{display:inline-block;margin-left:12px;font-size:10px;color:#ddd}
+.todo:hover .acts{color:#bbb}
+.todo .acts span{cursor:pointer;margin-left:7px}
+.todo .acts span:hover{color:#333}
+
+.stats{width:200px;padding:22px 22px 22px 8px}
+.row{display:flex;justify-content:space-between;padding:5px 0;font-size:12px;color:#333}
+.row .v{font-weight:600}
+.row.tag{color:#999;cursor:pointer}
+.row.tag:hover{color:#333}
+.gap{height:20px}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth-page">
+    <div class="auth-box">
+        <h2>Todo App</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <p id="auth-error"></p>
+        <button onclick="login()">Login</button>
+        <button onclick="signup()">Sign Up</button>
+    </div>
+</div>
+
+<div id="app-page" style="display:none">
+    <div class="sidebar">
+        <div class="top-row">
+            <span class="user-name" id="user-display"></span>
+            <span class="logout" onclick="logout()" title="Logout">&#91;&rarr;</span>
+        </div>
+        <div class="label">MY LISTS</div>
+        <ul id="lists"></ul>
+        <div class="new-list" onclick="createList()">+ &nbsp;New List</div>
+    </div>
+
+    <div class="main">
+        <div id="empty">Select or create a list</div>
+        <div id="list-view" style="display:none">
+            <div class="head">
+                <h1 id="list-name"></h1>
+                <span class="pencil" onclick="renameList()">&#9998;</span>
+                <span class="mini" onclick="shareList()">share</span>
+                <span class="mini" onclick="deleteList()">delete</span>
+                <button class="new-task" onclick="showForm()">+ &nbsp;New Task</button>
+            </div>
+            <div id="share-box" style="display:none"></div>
+            <div id="form" style="display:none">
+                <input type="text" id="t-title" placeholder="Task name">
+                <input type="text" id="t-tags" placeholder="tags, comma separated">
+                <button onclick="addItem()">Add</button>
+                <button onclick="hideForm()">Cancel</button>
+            </div>
+            <div id="filter-note" style="display:none"></div>
+            <div id="items"></div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div class="label">LIST STATISTICS</div>
+        <div id="stats-box"></div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
